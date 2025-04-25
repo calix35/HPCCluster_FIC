@@ -1,4 +1,4 @@
-# 🎯 Proyecto: Ejemplos de Ejecución en Clúster HPC Pack
+# 🎯 Proyecto: Ejemplos de Ejecución en Clúster HPC FIC
 
 Este repositorio contiene ejemplos de programas diseñados para ejecutarse en un clúster basado en **Microsoft HPC Pack**. Los ejemplos incluyen programas en **Python**, **C**, **C++**, **MPI** y **Java**, listos para ser lanzados usando diferentes tipos de trabajos (Single-Task, Parametric Sweep, MPI Jobs).
 
@@ -23,7 +23,7 @@ El clúster está compuesto de **tres servidores** conectados mediante una red i
 |------------------|------------------------------------|-------------------|
 | **MasterServer1** | Head Node + Compute Node             | 32 cores          |
 | **MasterServer2** | Compute Node                        | 32 cores          |
-| **MasterServer3** | Compute Node + Servidor de VMs       | 16 cores          |
+| **MasterServer3** | Compute Node        | 16 cores          |
 
 Todos los servidores están integrados con almacenamiento compartido a través de la carpeta `\\10.0.0.1\HPCShare\`.
 
@@ -101,7 +101,7 @@ Cada ejemplo incluye su propio `README.md` con instrucciones detalladas para su 
 - Verifica siempre que tu entorno de trabajo (entorno virtual, ejecutables compilados, etc.) esté listo **antes** de enviar trabajos.
 - Consulta en el portal web de HPC Pack el estado de los nodos y trabajos enviados.
 - Evita usar todos los recursos disponibles si no es estrictamente necesario para permitir uso compartido del clúster.
-- Usa rutas **UNC** completas en el "Working Directory" y no rutas locales.
+- Usa rutas **UNC** completas en el "Working Directory" y no rutas locales (Para el mejor funcionamiento interno, usa la red privada 10.0.0.1 para el almacenamiento compartido, y la red masterserver1.uat.edu.mx solo desde tu computadora personal).
 - Mantén tus carpetas organizadas dentro de `HPCShare`.
 
 ---
@@ -114,4 +114,4 @@ Cada ejemplo incluye su propio `README.md` con instrucciones detalladas para su 
 4. **Explora** los ejemplos.
 5. **Envía** tu primer trabajo al clúster.
 
-¡Bienvenido al procesamiento de alto desempeño con Microsoft HPC Pack!
+¡Bienvenido al procesamiento de alto desempeño con HPC FIC!
