@@ -1,4 +1,4 @@
-# 🎯 Proyecto: Ejemplos de Ejecución en Clúster HPC FIC
+# 🎯 Proyecto: Ejemplos de Ejecución en Clúster HPC Pack
 
 Este repositorio contiene ejemplos de programas diseñados para ejecutarse en un clúster basado en **Microsoft HPC Pack**. Los ejemplos incluyen programas en **Python**, **C**, **C++**, **MPI** y **Java**, listos para ser lanzados usando diferentes tipos de trabajos (Single-Task, Parametric Sweep, MPI Jobs).
 
@@ -19,8 +19,8 @@ Este repositorio contiene ejemplos de programas diseñados para ejecutarse en un
 
 El clúster está compuesto de **tres servidores** conectados mediante una red interna:
 
-| Servidor        | Rol                                | Cores disponibles |
-|-----------------|------------------------------------|-------------------|
+| Servidor         | Rol                                | Cores disponibles |
+|------------------|------------------------------------|-------------------|
 | **MasterServer1** | Head Node + Compute Node             | 32 cores          |
 | **MasterServer2** | Compute Node                        | 32 cores          |
 | **MasterServer3** | Compute Node + Servidor de VMs       | 16 cores          |
@@ -47,34 +47,44 @@ Los usuarios tienen dos opciones para interactuar con el clúster:
 
 ## 📂 Espacio compartido
 
-Cada usuario debe montar la unidad de red para acceder a su espacio de trabajo:
+Cada usuario debe montar la unidad de red para acceder a su espacio de trabajo personal.
 
-- **Ruta UNC**:
-  
-  ```
-  \\10.0.0.1\HPCShare\usuario
-  ```
+### 🔹 Ruta UNC
 
-- Para montar automáticamente la carpeta al iniciar sesión:
+```
+\\masterserver1.uat.edu.mx\HPCShare\usuario
+```
+*(reemplazando `usuario` por su nombre de usuario institucional).*
 
-  En Windows:
+---
 
-  ```bat
-  net use Z: \\10.0.0.1\HPCShare\usuario /persistent:yes
-  ```
+### 🔹 Cómo montar la carpeta manualmente en Windows
 
-  > Sustituye `usuario` por tu nombre de usuario institucional.
+**Opción 1: Desde el Explorador de archivos**
 
-- En Linux o MacOS:
+1. Abrir **Explorador de archivos**.
+2. Clic derecho en **Este equipo** > **Conectar a unidad de red...**.
+3. Unidad: `Z:` (o la que prefieras).
+4. Carpeta: `\\masterserver1.uat.edu.mx\HPCShare\usuario`
+5. Activar:
+   - ✅ "Reconectar al iniciar sesión"
+   - ✅ "Conectar usando credenciales diferentes" (si no estás en el dominio)
+6. Finalizar y colocar usuario y contraseña:
+   - Usuario: `uat\usuario`
+   - Contraseña: la de tu cuenta institucional.
 
-  Utilizar `cifs` o herramientas equivalentes para montar el recurso compartido.
+**Opción 2: Desde línea de comandos (cmd.exe)**
+
+```bat
+net use Z: \\masterserver1.uat.edu.mx\HPCShare\usuario /persistent:yes
+```
 
 ---
 
 ## 🧩 Ejemplos disponibles
 
-| Carpeta                         | Descripción                                      |
-|----------------------------------|--------------------------------------------------|
+| Carpeta                                                                 | Descripción                                      |
+|-------------------------------------------------------------------------|--------------------------------------------------|
 | [**Ejemplo_Entorno_Virtual_Python**](./Ejemplo_Entorno_Virtual_Python/README.md) | Creación de entorno virtual de Python           |
 | [**Ejemplo_Python_Simple**](./Ejemplo_Python_Simple/README.md)         | Ejecución de múltiples simulaciones en paralelo |
 | [**Ejemplo_Python_MPI**](./Ejemplo_Python_MPI/README.md)            | Ejecución de simulación distribuida con MPI en Python |
