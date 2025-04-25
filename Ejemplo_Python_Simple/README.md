@@ -45,7 +45,7 @@ python_env\Scripts\python.exe simulacion.py !TAM! !SEED!
 
 ### 1. Crear el entorno virtual (una sola vez)
 
-Usa el [ejemplo anterior](../Ejemplo_Entorno_Virtual_Python/README.md) con:
+Usa el [Ejemplo: Crear un entorno virtual de Python en el clúster](../Ejemplo_Entorno_Virtual_Python/README.md) para crear el entorno virtual con:
 
 ```bat
 crear_entorno_virtual.bat \\10.0.0.1\HPCShare\usuario\Ejemplo_Python_Simple\python_env requirements.txt
