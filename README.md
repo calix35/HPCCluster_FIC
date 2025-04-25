@@ -1,6 +1,17 @@
-# 🎯 Proyecto: Ejemplos de Ejecución en Clúster HPC Pack
+# 🎯 Proyecto: Ejemplos de Ejecución en Clúster HPC FIC
 
 Este repositorio contiene ejemplos de programas diseñados para ejecutarse en un clúster basado en **Microsoft HPC Pack**. Los ejemplos incluyen programas en **Python**, **C**, **C++**, **MPI** y **Java**, listos para ser lanzados usando diferentes tipos de trabajos (Single-Task, Parametric Sweep, MPI Jobs).
+
+---
+
+## 📑 Índice
+
+- [🏛️ Arquitectura del Clúster](#️-arquitectura-del-clúster)
+- [⚙️ Plataforma de Ejecución](#️-plataforma-de-ejecución)
+- [📂 Espacio compartido](#-espacio-compartido)
+- [🧩 Ejemplos disponibles](#-ejemplos-disponibles)
+- [📢 Recomendaciones generales](#-recomendaciones-generales)
+- [🚀 Cómo empezar](#-cómo-empezar)
 
 ---
 
@@ -64,12 +75,12 @@ Cada usuario debe montar la unidad de red para acceder a su espacio de trabajo:
 
 | Carpeta                         | Descripción                                      |
 |----------------------------------|--------------------------------------------------|
-| **Ejemplo_Entorno_Virtual_Python** | Creación de entorno virtual de Python           |
-| **Ejemplo_Python_Simple**         | Ejecución de múltiples simulaciones en paralelo |
-| **Ejemplo_Python_MPI**            | Ejecución de simulación distribuida con MPI en Python |
-| **Ejemplo_C_Lapack**              | Resolución de sistemas lineales con LAPACK en C |
-| **Ejemplo_C_MPI**                 | "Hola mundo" paralelo usando MPI en C           |
-| **Ejemplo_Java**                  | Simulación aleatoria utilizando Java            |
+| [**Ejemplo_Entorno_Virtual_Python**](./Ejemplo_Entorno_Virtual_Python/README.md) | Creación de entorno virtual de Python           |
+| [**Ejemplo_Python_Simple**](./Ejemplo_Python_Simple/README.md)         | Ejecución de múltiples simulaciones en paralelo |
+| [**Ejemplo_Python_MPI**](./Ejemplo_Python_MPI/README.md)            | Ejecución de simulación distribuida con MPI en Python |
+| [**Ejemplo_C_Lapack**](./Ejemplo_C_Lapack/README.md)              | Resolución de sistemas lineales con LAPACK en C |
+| [**Ejemplo_C_MPI**](./Ejemplo_C_MPI/README.md)                 | "Hola mundo" paralelo usando MPI en C           |
+| [**Ejemplo_Java**](./Ejemplo_Java/README.md)                  | Simulación aleatoria utilizando Java            |
 
 Cada ejemplo incluye su propio `README.md` con instrucciones detalladas para su ejecución.
 
