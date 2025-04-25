@@ -6,7 +6,7 @@ Este ejemplo muestra cómo ejecutar un programa en Python que utiliza la librer�
 
 ## 📁 Archivos incluidos
 
-- `mpi_hello.py`: Programa en Python que divide y suma una lista entre procesos usando MPI.
+- `mpi_hello.py`: Programa en Python que genera listas de números aleatorios para cada proceso y calcula su suma local.
 - `run_mpi_python.bat`: Script que ejecuta el programa con múltiples procesos usando `mpiexec`.
 - `requirements.txt`: Contiene la librería `mpi4py` necesaria para ejecutar el programa.
 
@@ -14,13 +14,21 @@ Este ejemplo muestra cómo ejecutar un programa en Python que utiliza la librer�
 
 ## ⚙️ Descripción del programa
 
-`mpi_hello.py` divide el trabajo de sumar una lista de números entre varios procesos MPI. Cada proceso calcula una parte de la suma y escribe un archivo de salida:
+`mpi_hello.py` genera, para cada proceso, una lista de números específicos, calcula su suma local y guarda el resultado en un archivo de salida:
 
 ```
 salida_<rank>.dat
 ```
 
 Donde `<rank>` es el identificador del proceso dentro del grupo MPI.
+
+Cada proceso:
+- Genera su propio conjunto de datos.
+- Calcula la suma de esos datos de manera independiente.
+- Escribe un archivo de salida con:
+  - Su número de proceso (`rank`) y número total de procesos (`size`).
+  - Los datos generados.
+  - El resultado de su suma local.
 
 ---
 
@@ -96,8 +104,9 @@ salida_<rank>.dat
 
 El archivo contendrá:
 
-- Los datos que procesó ese proceso
-- El resultado parcial de la suma
+- Los datos procesados por ese proceso
+- El resultado de la suma local
+- Información del identificador (`rank`) y el total de procesos (`size`)
 
 ---
 
