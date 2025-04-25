@@ -7,7 +7,7 @@ Este ejemplo muestra cómo ejecutar múltiples instancias de un programa en Pyth
 ## 📁 Archivos incluidos
 
 - `simulacion.py`: Programa en Python que genera números aleatorios y calcula su promedio.
-- `ejecutar_python.bat`: Script por lotes que activa el entorno virtual y ejecuta el programa con los parámetros correspondientes.
+- `ejecutar_python.bat`: Script por lotes que ejecuta el programa directamente desde el entorno virtual.
 - `requirements.txt`: Archivo con el requerimiento del entorno virtual (`numpy`).
 - `parametros.txt`: Archivo con los conjuntos de parámetros (uno por línea) a usar en las simulaciones.
 
@@ -27,9 +27,17 @@ resultado_<semilla>.dat
 
 ---
 
-## ⚙️ Requisitos previos
+## ⚙️ Consideraciones sobre el entorno virtual
 
-Antes de ejecutar este ejemplo, debes haber creado un **entorno virtual de Python** que contenga `numpy`, usando el ejemplo anterior (`Ejemplo_Entorno_Virtual_Python`).
+El script `ejecutar_python.bat` **no activa el entorno virtual**, sino que utiliza directamente el ejecutable `python.exe` desde el entorno.
+
+Por defecto, se espera que el entorno esté ubicado en una carpeta llamada `python_env`, y el comando utilizado es:
+
+```
+python_env\Scripts\python.exe simulacion.py !TAM! !SEED!
+```
+
+> Puedes modificar el nombre del entorno (`python_env`) según tus necesidades, siempre y cuando ajustes la ruta en el archivo `.bat`.
 
 ---
 
@@ -86,3 +94,4 @@ Cada archivo incluirá:
 
 - Sustituye `usuario` en las rutas UNC por tu nombre de usuario institucional.
 - Verifica que los nombres de archivo y parámetros coincidan exactamente.
+- Asegúrate de que el entorno virtual tenga el nombre correcto o ajusta el script `.bat` si cambias ese nombre.
