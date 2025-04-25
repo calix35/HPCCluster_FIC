@@ -40,7 +40,7 @@ Antes de ejecutar este ejemplo, debes haber creado un **entorno virtual de Pytho
 Usa el ejemplo anterior con:
 
 ```bat
-crear_entorno_virtual.bat \\10.0.0.1\HPCShare\usuario\Ejemplo_Python_Simple\python_entorno requirements.txt
+crear_entorno_virtual.bat \\10.0.0.1\HPCShare\usuario\Ejemplo_Python_Simple\python_env requirements.txt
 ```
 
 ### 2. Crear un nuevo trabajo de tipo **"Parametric Sweep Job"**
