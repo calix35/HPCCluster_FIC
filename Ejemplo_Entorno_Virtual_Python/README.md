@@ -61,4 +61,3 @@ mientorno\Scripts\activate.bat
 
 - Haber iniciado sesión en el clúster.
 - Tener acceso a tu carpeta dentro de `HPCShare`.
-- El nodo debe tener Python instalado previamente.
