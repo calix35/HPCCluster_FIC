@@ -48,7 +48,7 @@ python_env\Scripts\python.exe simulacion.py !TAM! !SEED!
 Usa el [Ejemplo: Crear un entorno virtual de Python en el clúster](../Ejemplo_Entorno_Virtual_Python/README.md) para crear el entorno virtual con:
 
 ```bat
-crear_entorno_virtual.bat \\10.0.0.1\HPCShare\usuario\Ejemplo_Python_Simple\python_env requirements.txt
+crear_entorno_virtual.bat Ejemplo_Python_Simple\python_env Ejemplo_Python_Simple\requirements.txt
 ```
 
 ### 2. Crear un nuevo trabajo de tipo **"Parametric Sweep Job"**
