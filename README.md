@@ -23,10 +23,26 @@ El clúster está compuesto de **tres servidores** conectados mediante una red i
 |------------------|------------------------------------|-------------------|
 | **MasterServer1** | Head Node + Compute Node             | 32 cores          |
 | **MasterServer2** | Compute Node                        | 32 cores          |
-| **MasterServer3** | Compute Node        | 16 cores          |
+| **MasterServer3** | Compute Node (parcialmente virtualizado)       | 16 cores          |
 
 Todos los servidores están integrados con almacenamiento compartido a través de la carpeta `\\10.0.0.1\HPCShare\`.
 
+---
+
+## 🧮 Notas sobre Virtualización en el Clúster
+
+El servidor **MasterServer3** ejecuta simultáneamente servicios de virtualización utilizando **Hyper-V**, lo que explica que solo estén disponibles 16 de sus 32 núcleos para el clúster HPC.
+
+Actualmente, en este servidor se alojan **cuatro máquinas virtuales**, destinadas a brindar servicios auxiliares a nivel institucional y académico:
+
+- **VM1:** Windows Server 2022 — Servidor Web + Base de Datos
+- **VM2:** Windows Server 2022 — Servidor Web + Base de Datos
+- **VM3:** Ubuntu Server 22.04 — Servidor Web con múltiples contenedores Docker
+- **VM4:** Ubuntu Server 18.04 — Servidor especializado con ROS (Robot Operating System)
+
+Estas máquinas permiten el despliegue de aplicaciones web, backend de proyectos estudiantiles, y simulaciones con robots en entornos ROS.
+
+Este esquema de virtualización permite aprovechar el hardware del nodo sin comprometer la operación principal del clúster, y fomenta la integración de servicios científicos, educativos y de desarrollo tecnológico sobre una misma infraestructura.
 ---
 
 ## ⚙️ Plataforma de Ejecución
