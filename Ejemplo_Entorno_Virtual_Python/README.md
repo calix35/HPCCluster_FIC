@@ -29,7 +29,7 @@ crear_entorno_virtual.bat <ruta_completa_entorno> <archivo_requirements>
 3. En **"Command line"**, escribe el siguiente comando:
 
    ```
-   crear_entorno_virtual.bat \\10.0.0.1\HPCShare\usuario\Ejemplo_Entorno_Virtual_Python\mientorno requirements.txt
+   crear_entorno_virtual.bat Ejemplo_Entorno_Virtual_Python\mientorno Ejemplo_Entorno_Virtual_Python\requirements.txt
    ```
 
    🔸 Sustituye `usuario` por tu nombre de usuario de la universidad.  
