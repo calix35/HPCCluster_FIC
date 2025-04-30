@@ -36,7 +36,7 @@ Se utiliza **Microsoft HPC Pack** como software de gestión de trabajos y recurs
 Los usuarios tienen dos opciones para interactuar con el clúster:
 
 - **Desde Windows**:
-  1. Instalar **[HPC Pack Client Utilities](https://www.microsoft.com/en-us/download/details.aspx?id=106334)** (versión compatible: HPC Pack 2019 Update 3).
+  1. Instalar **[HPC Pack Client Utilities (HpcClient_x86.msi o HpcClient_x64.msi)](https://www.microsoft.com/en-us/download/details.aspx?id=106334)** (versión compatible: HPC Pack 2019 Update 3).
   2. Conectar al Head Node (`masterserver1.uat.edu.mx`).
 
 - **Desde navegador web**:
