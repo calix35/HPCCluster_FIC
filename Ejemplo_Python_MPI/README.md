@@ -49,7 +49,7 @@ Esto ejecuta el programa `mpi_hello.py` dentro del entorno virtual `python_mpi_e
 Antes de ejecutar este ejemplo, debes haber creado un entorno virtual llamado `python_mpi_env` con el siguiente comando (usando el [Ejemplo_Entorno_Virtual_Python](../Ejemplo_Entorno_Virtual_Python/README.md)):
 
 ```bat
-crear_entorno_virtual.bat \\10.0.0.1\HPCShare\usuario\Ejemplo_Python_MPI\python_mpi_env requirements.txt
+crear_entorno_virtual.bat Ejemplo_Python_MPI\python_mpi_env Ejemplo_Python_MPI\requirements.txt
 ```
 
 ---
