@@ -35,15 +35,55 @@ El servidor **MasterServer3** ejecuta simultáneamente servicios de virtualizaci
 
 Actualmente, en este servidor se alojan **cuatro máquinas virtuales**, destinadas a brindar servicios auxiliares a nivel institucional y académico:
 
-- **VM1:** Windows Server 2022 — Servidor Web + Base de Datos
-- **VM2:** Windows Server 2022 — Servidor Web + Base de Datos
-- **VM3:** Ubuntu Server 22.04 — Servidor Web con múltiples contenedores Docker
-- **VM4:** Ubuntu Server 18.04 — Servidor especializado con ROS (Robot Operating System)
+| Máquina | Dirección IP         | Sistema Operativo     | Propósito                                | Nombre DNS             |
+|---------|----------------------|------------------------|------------------------------------------|------------------------|
+| VM1     | 148.237.28.38        | Windows Server 2022    | Servidor Web + Base de Datos             | `fic1.uat.edu.mx`      |
+| VM2     | 148.237.28.34        | Windows Server 2022    | Servidor Web + Base de Datos             | `fic2.uat.edu.mx`      |
+| VM3     | 148.237.28.36        | Ubuntu Server 22.04    | Contenedores Docker para proyectos web   | `fic3.uat.edu.mx`      |
+| VM4     | 148.237.28.35        | Ubuntu Server 18.04    | Simulación y desarrollo con ROS          | `fic4.uat.edu.mx`      |
 
-Estas máquinas permiten el despliegue de aplicaciones web, backend de proyectos estudiantiles, y simulaciones con robots en entornos ROS.
+> **Importante:** Todas las máquinas virtuales y el clúster solo son accesibles desde la **red interna de la Universidad Autónoma de Tamaulipas**. No se permite el acceso desde redes externas.
 
-Este esquema de virtualización permite aprovechar el hardware del nodo sin comprometer la operación principal del clúster, y fomenta la integración de servicios científicos, educativos y de desarrollo tecnológico sobre una misma infraestructura.
+Estas máquinas permiten el despliegue de aplicaciones web, backend de proyectos estudiantiles, y simulaciones con robots en entornos ROS. Este esquema de virtualización permite aprovechar el hardware del nodo sin comprometer la operación principal del clúster, y fomenta la integración de servicios científicos, educativos y de desarrollo tecnológico sobre una misma infraestructura.
 ---
+
+## 🔐 Acceso a las máquinas virtuales
+
+Las máquinas virtuales están disponibles exclusivamente dentro de la red de la Universidad Autónoma de Tamaulipas. No se permite el acceso desde redes externas (como internet público o redes personales).
+
+Los usuarios que deseen utilizar alguna de las VMs deben **solicitar el acceso previamente**, indicando:
+
+- Su **cuenta institucional** (`usuario@...uat.edu.mx`)
+- El **objetivo académico o de desarrollo**
+- En el caso de VM3, el **nombre del proyecto**
+
+### 1. VM1 y VM2 — Windows Server 2022 (`fic1`, `fic2`)
+
+- **Acceso:** Escritorio Remoto (**RDP**)
+- **Credenciales:** Cuenta institucional
+- **Propósito:** Desarrollo web, pruebas de bases de datos
+- **Uso:** Individual por usuario con configuración propia
+- **Responsabilidad:** El usuario instala y configura el entorno que necesite
+
+### 2. VM4 — Ubuntu 18.04 con ROS (`fic4`)
+
+- **Acceso:** Escritorio Remoto (**RDP**) y también **SSH**
+- **Credenciales:** Cuenta institucional
+- **Propósito:** Uso de ROS (Robot Operating System) para simulaciones
+- **Uso:** **Compartido entre todos los usuarios autorizados**
+- **Estado inicial:** ROS ya preinstalado; el resto de la configuración debe realizarla cada usuario según sus necesidades
+
+### 3. VM3 — Ubuntu 22.04 con Docker (`fic3`)
+
+- **Acceso:** **SSH**
+- **Credenciales:** Se proporcionan tras la solicitud, asociadas al proyecto
+- **Propósito:** Despliegue de servicios web o backend con Docker
+- **Uso:** Espacio aislado por proyecto; el usuario tiene **acceso como administrador** dentro de su entorno
+- **Responsabilidad:** El usuario es completamente responsable de la configuración, instalación de contenedores y mantenimiento
+
+---
+
+En todos los casos, se espera que el usuario tenga la capacidad técnica para instalar, configurar y mantener su entorno de trabajo. Se recomienda seguir buenas prácticas de seguridad, respaldo y documentación.
 
 ## ⚙️ Plataforma de Ejecución
 
