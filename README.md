@@ -49,8 +49,6 @@ Estas máquinas permiten el despliegue de aplicaciones web, backend de proyectos
 
 ## 🔐 Acceso a las máquinas virtuales
 
-Las máquinas virtuales están disponibles exclusivamente dentro de la red de la Universidad Autónoma de Tamaulipas. No se permite el acceso desde redes externas (como internet público o redes personales).
-
 Los usuarios que deseen utilizar alguna de las VMs deben **solicitar el acceso previamente**, indicando:
 
 - Su **cuenta institucional** (`usuario@...uat.edu.mx`)
