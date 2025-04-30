@@ -77,7 +77,7 @@ Los usuarios que deseen utilizar alguna de las VMs deben **solicitar el acceso p
 - **Credenciales:** Cuenta institucional
 - **Propósito:** Despliegue de servicios web o backend con Docker
 - **Uso:** Espacio aislado por proyecto; el usuario tiene **acceso como administrador** dentro de su entorno
-- **Responsabilidad:** El usuario es completamente responsable de la configuración, instalación de contenedores y mantenimiento
+- **Responsabilidad:** El usuario es completamente responsable de la configuración y mantenimiento
 
 ---
 
