@@ -35,12 +35,12 @@ El servidor **MasterServer3** ejecuta simultáneamente servicios de virtualizaci
 
 Actualmente, en este servidor se alojan **cuatro máquinas virtuales**, destinadas a brindar servicios auxiliares a nivel institucional y académico:
 
-| Máquina | Dirección IP         | Sistema Operativo     | Propósito                                | Nombre DNS             |
-|---------|----------------------|------------------------|------------------------------------------|------------------------|
-| VM1     | 148.237.28.38        | Windows Server 2022    | Servidor Web + Base de Datos             | `fic1.uat.edu.mx`      |
-| VM2     | 148.237.28.34        | Windows Server 2022    | Servidor Web + Base de Datos             | `fic2.uat.edu.mx`      |
-| VM3     | 148.237.28.36        | Ubuntu Server 22.04    | Contenedores Docker para proyectos web   | `fic3.uat.edu.mx`      |
-| VM4     | 148.237.28.35        | Ubuntu Server 18.04    | Simulación y desarrollo con ROS          | `fic4.uat.edu.mx`      |
+| Máquina | Sistema Operativo     | Propósito                                | Nombre DNS             |
+|---------|------------------------|------------------------------------------|------------------------|
+| VM1     | Windows Server 2022    | Servidor Web + Base de Datos             | `fic1.uat.edu.mx`      |
+| VM2     | Windows Server 2022    | Servidor Web + Base de Datos             | `fic2.uat.edu.mx`      |
+| VM3     | Ubuntu Server 22.04    | Contenedores Docker para proyectos web   | `fic3.uat.edu.mx`      |
+| VM4     | Ubuntu Server 18.04    | Simulación y desarrollo con ROS          | `fic4.uat.edu.mx`      |
 
 > **Importante:** Todas las máquinas virtuales y el clúster solo son accesibles desde la **red interna de la Universidad Autónoma de Tamaulipas**. No se permite el acceso desde redes externas.
 
