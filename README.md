@@ -44,7 +44,7 @@ Actualmente, en este servidor se alojan **cuatro máquinas virtuales**, destinad
 
 > **Importante:** Todas las máquinas virtuales y el clúster solo son accesibles desde la **red interna de la Universidad Autónoma de Tamaulipas**. No se permite el acceso desde redes externas.
 
-Estas máquinas permiten el despliegue de aplicaciones web, backend de proyectos estudiantiles, y simulaciones con robots en entornos ROS. Este esquema de virtualización permite aprovechar el hardware del nodo sin comprometer la operación principal del clúster, y fomenta la integración de servicios científicos, educativos y de desarrollo tecnológico sobre una misma infraestructura.
+> Estas máquinas permiten el despliegue de aplicaciones web, backend de proyectos estudiantiles, y simulaciones con robots en entornos ROS. Este esquema de virtualización permite aprovechar el hardware del nodo sin comprometer la operación principal del clúster, y fomenta la integración de servicios científicos, educativos y de desarrollo tecnológico sobre una misma infraestructura.
 ---
 
 ## 🔐 Acceso a las máquinas virtuales
