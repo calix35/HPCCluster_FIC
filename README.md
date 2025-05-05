@@ -161,7 +161,7 @@ Cada ejemplo incluye su propio `README.md` con instrucciones detalladas para su 
 
 ## 🚀 Cómo empezar
 
-1. **Instala** HPC Client o accede vía navegador.
+1. **Instala** HPC Client.
 2. **Conéctate** al Head Node.
 3. **Monta** tu carpeta compartida.
 4. **Explora** los ejemplos.
