@@ -152,7 +152,7 @@ Cada ejemplo incluye su propio `README.md` con instrucciones detalladas para su 
 ## 📢 Recomendaciones generales
 
 - Verifica siempre que tu entorno de trabajo (entorno virtual, ejecutables compilados, etc.) esté listo **antes** de enviar trabajos.
-- Consulta en el portal web de HPC Pack el estado de los nodos y trabajos enviados.
+- Consulta Microsoft HPC Pack el estado de los nodos y trabajos enviados.
 - Evita usar todos los recursos disponibles si no es estrictamente necesario para permitir uso compartido del clúster.
 - Usa rutas **UNC** completas en el "Working Directory" y no rutas locales (Para el mejor funcionamiento interno, usa la red privada 10.0.0.1 para el almacenamiento compartido, y la red masterserver1.uat.edu.mx solo desde tu computadora personal).
 - Mantén tus carpetas organizadas dentro de `HPCShare`.
