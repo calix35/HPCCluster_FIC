@@ -63,21 +63,21 @@ Los usuarios que deseen utilizar alguna de las VMs deben **solicitar el acceso p
 - **Uso:** Individual por usuario con configuración propia
 - **Responsabilidad:** El usuario instala y configura el entorno que necesite
 
-### 2. VM4 — Ubuntu 18.04 con ROS (`fic4`)
-
-- **Acceso:** Escritorio Remoto (**RDP**) y también **SSH**
-- **Credenciales:** Cuenta institucional
-- **Propósito:** Uso de ROS (Robot Operating System) para simulaciones
-- **Uso:** **Compartido entre todos los usuarios autorizados**
-- **Estado inicial:** ROS ya preinstalado; el resto de la configuración debe realizarla cada usuario según sus necesidades
-
-### 3. VM3 — Ubuntu 22.04 con Docker (`fic3`)
+### 2. VM3 — Ubuntu 22.04 con Docker (`fic3`)
 
 - **Acceso:** **SSH**
 - **Credenciales:** Cuenta institucional
 - **Propósito:** Despliegue de servicios web o backend con Docker
 - **Uso:** Espacio aislado por proyecto; el usuario tiene **acceso como administrador** dentro de su entorno
 - **Responsabilidad:** El usuario es completamente responsable de la configuración y mantenimiento
+
+### 3. VM4 — Ubuntu 18.04 con ROS (`fic4`)
+
+- **Acceso:** Escritorio Remoto (**RDP**) y también **SSH**
+- **Credenciales:** Cuenta institucional
+- **Propósito:** Uso de ROS (Robot Operating System) para simulaciones
+- **Uso:** **Compartido entre todos los usuarios autorizados**
+- **Estado inicial:** ROS ya preinstalado; el resto de la configuración debe realizarla cada usuario según sus necesidades
 
 ---
 
